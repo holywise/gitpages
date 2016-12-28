@@ -1,0 +1,41 @@
+
+/* Font Awesome hatena bookmark */
+.fa-hatena:before {
+    content: "B!";
+    font-family: Verdana;
+    font-weight: bold
+}
+
+.content-card .hatena-share a { background-color: #3C7DD1; }
+.content-card .hatena-share a:hover { background-color: #1B5CB0; }
+
+.shadow-card {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.shadow-header {
+    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 1px 5px 0 rgba(0,0,0,0.12),0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+.shadow-card h2 {
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    box-shadow: 0 1px 0 rgba(255,255,255,1);
+    padding-bottom: 6px;
+    padding-top: 12px;
+}
+
+.shadow-card h3::before {
+    content: "\f124  ";
+    font-family: FontAwesome;
+}
+
+.shadow-card h3 {
+    padding-top: 6px;
+    border-bottom: 1px dashed rgba(0,0,0,0.1);
+}
+
+.shadow-card h4::before {
+    content: "\f1db  ";
+    font-family: FontAwesome;
+}
+

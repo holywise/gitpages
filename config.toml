@@ -1,0 +1,40 @@
+#
+# config.toml
+#
+
+DefaultContentLanguage = "ja"
+languageCode = "ja-JP"
+
+baseurl = "https://holywise.github.io/"
+title = "Holywise Tech Notes"
+theme = "hugo-phlat-theme"
+# PygmentsCodeFences = true
+# PygmentsStyle = "monokai"
+
+[permalinks]
+  post = "/:year/:month/:slug/"
+  page = "/:slug/"
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[params]
+  dateformat = "2006-01-02"
+  keywords = ["programming", "developer"]
+  description = "holywise tech notes"
+
+[social]
+  email = "mailto:holywise@gmail.com"
+  github = "https://github.com/holywise"
+  stackoverflow = "https://ja.stackoverflow.com/users/10492/holywise"
+
+[[menu.header]]
+  name = "Home"
+  weight = 1
+  url = "/"
+
+[[menu.header]]
+  name = "About"
+  weight = 2
+  url = "/about/"

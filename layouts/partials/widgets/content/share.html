@@ -1,0 +1,10 @@
+{{ if eq .Type "post" }}
+    <ul class="list-inline share" style="margin-top: 15px; margin-left: 0px">
+        <li class="facebook-share"><a target="_blank" href="http://www.facebook.com/sharer.php?u={{ .Permalink }}" rel="nofollow" title="Facebook"><i class="fa fa-facebook fa-lg"></i></a></li>
+        <li class="googleplus-share"><a target="_blank" href="https://plus.google.com/share?url={{ .Permalink }}" rel="nofollow" title="Google+"><i class="fa fa-google-plus fa-lg"></i></a></li>
+        <li class="twitter-share"><a target="_blank" href="https://twitter.com/share?url={{ .Permalink }}&amp;text={{ .Title }}" rel="nofollow" title="Twitter"><i class="fa fa-twitter fa-lg"></i></a></li>
+        <li class="reddit-share"><a target="_blank" href="http://reddit.com/submit?url={{ .Permalink }}&amp;title={{ .Title }}" rel="nofollow" title="reddit"><i class="fa fa-reddit fa-lg"></i></a></li>
+        <li class="linkedin-share"><a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url={{ .Permalink }}" rel="nofollow" title="LinkedIn"><i class="fa fa-linkedin fa-lg"></i></a></li>
+        <li class="hatena-share"><a target="_blank" href="http://b.hatena.ne.jp/add?mode=confirm&amp;url={{ .Permalink }}&amp;title={{ .Title }}" rel="nofollow" title="はてなブックマーク"><i class="fa fa-hatena fa-lg"></i></a></li>
+    </ul>
+{{ end }}
