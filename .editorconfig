@@ -1,0 +1,22 @@
+# .editorconfig
+
+root = true
+
+[*]
+end_of_line = lf
+insert_final_newline = true
+
+[*.md]
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+[*.{css,html}]
+charset = utf-8
+indent_style = space
+indent_size = 4
+
+[*.toml]
+charset = utf-8
+indent_style = space
+indent_size = 2
