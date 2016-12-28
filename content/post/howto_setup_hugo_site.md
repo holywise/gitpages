@@ -237,7 +237,7 @@ theme = "hugo-phlat-theme"                # サイトで使用するテーマ名
 
 [params]
   keywords = ["programming", "developer"] # 生成ページに keywords 指定がないときのデフォルト値 (meta keywords)
-  description = "holywise tech notes"     # 生成ページに description 指定がないときのデフォルト値 (meta description)
+  description = "my tech notes"           # 生成ページに description 指定がないときのデフォルト値 (meta description)
 
 [[menu.header]]
   name = "Home"
