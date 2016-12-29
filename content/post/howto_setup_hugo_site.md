@@ -1,12 +1,12 @@
 +++
-draft = true
+draft = false
 description = "HUGOで静的ページを作成して github pages で公開するまでの手順"
 author = "holywise"
 isCJKLanguage = true
 tags = [
   "Hugo", "Windows", "GitHub"
 ]
-date = "2016-12-17T00:05:02+09:00"
+date = "2016-12-29T01:55:40+09:00"
 slug = "how_to_setup_hugo_site"
 categories = [
   "環境構築",

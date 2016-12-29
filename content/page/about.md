@@ -1,9 +1,9 @@
 +++
 author = "holywise"
-draft = true
+draft = false
 description = "about author"
 isCJKLanguage = true
-date = "2016-12-11T18:40:55+09:00"
+date = "2016-12-29T01:55:12+09:00"
 title = "About"
 slug = "about"
 +++

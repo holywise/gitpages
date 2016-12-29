@@ -1,8 +1,8 @@
 +++
-date = "2016-12-26T01:04:13+09:00"
+date = "2016-12-29T01:55:48+09:00"
 slug = "how_to_add_pages_hugo_site"
 description = "HUGOで静的ページを作成して github pages で公開するまでの手順"
-draft = true
+draft = false
 categories = ["環境構築"]
 tags = ["Hugo", "Windows", "GitHub"]
 isCJKLanguage = true
