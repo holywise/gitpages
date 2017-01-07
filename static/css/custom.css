@@ -6,6 +6,10 @@
     font-weight: bold
 }
 
+ul.share .fa {
+    padding-right: 0px;
+}
+
 .content-card .hatena-share a { background-color: #3C7DD1; }
 .content-card .hatena-share a:hover { background-color: #1B5CB0; }
 
@@ -39,3 +43,6 @@
     font-family: FontAwesome;
 }
 
+.task-list li strong {
+    color: orangered;
+}
