@@ -46,3 +46,29 @@ ul.share .fa {
 .task-list li strong {
     color: orangered;
 }
+
+div.content-card {
+    counter-reset: figures;
+}
+
+figure {
+    counter-increment: figures;
+}
+
+figure img {
+    /*border-style: solid;
+    border-width: 1px;*/
+    box-shadow: 2px 2px 2px #AAA;
+}
+
+figcaption p::before {
+    content: 'Fig.' counter(figures) ' - ';
+}
+
+figcaption p {
+    margin-top: 1ex;
+    text-align: right;
+    color: maroon;
+    text-shadow: 1px 1px 2px #E0C0C0;
+    font-size: 85%;
+}

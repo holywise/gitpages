@@ -1,7 +1,7 @@
 +++
 date = "2016-12-29T01:55:48+09:00"
 slug = "how_to_add_pages_hugo_site"
-description = "HUGOで静的ページを作成して github pages で公開するまでの手順"
+description = "HUGOで静的ページを作成して GitHub Pages で公開するまでの手順"
 draft = false
 categories = ["環境構築"]
 tags = ["Hugo", "Windows", "GitHub"]
@@ -18,7 +18,7 @@ title = "HUGOで静的ページサイトを構築する (2/3)"
 1. [x] プロジェクト用の作業ディレクトリを作る
 1. [x] 作業ディレクトリに各種の初期設定を行う
 1. [ ] **作業ディレクトリにページデータを作成する** (←)
-1. [ ] github page に連携する
+1. [ ] [GitHub Pages に連携する]({{< relref "howto_push_hugo_site.md" >}})
 
 [前回のポスト]({{< relref "howto_setup_hugo_site.md" >}})で3番目の手順まで終えました。
 当ポストでは4番目の手順を示します。
@@ -106,6 +106,7 @@ draft = true
 
 `+++` で挟まれた行はフロントマターと言って、そのページの作成日付等のメタ情報をTOML形式で記述します。
 `date` の内容は自動生成されており <kbd>hugo new</kbd> を実行した日時になっています。
+`draft = true` はこの原稿データが下書きステータスであることを表しています。
 
 ページ本文は2回目に出現する `+++` 以降に記述していきます。
 以下にサンプルを示します。
@@ -144,6 +145,9 @@ categories = ["サンプル"]
 なおフロントマターに `isCJKLanguage = true` を追加しています。
 これは本文が日本語（or 中国語 or 韓国語）であることを明示するものです。
 必須ではありませんが、日本語で原稿を書くなら付けておくと良いでしょう。
+
+また Hugo は markdown の処理に [Blackfriday](https://github.com/russross/blackfriday) を使用しています。
+標準的な markdown の記法に若干の拡張がされているので、どのような記法が使えるかを上記のリンク先で見ておくことをお勧めします。
 
 ### ローカル環境でプレビューを見る
 

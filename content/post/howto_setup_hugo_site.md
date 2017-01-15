@@ -1,6 +1,6 @@
 +++
 draft = false
-description = "HUGOで静的ページを作成して github pages で公開するまでの手順"
+description = "HUGOで静的ページを作成して GitHub pages で公開するまでの手順"
 author = "holywise"
 isCJKLanguage = true
 tags = [
@@ -17,7 +17,8 @@ title = "HUGOで静的ページサイトを構築する (1/3)"
 
 ## そもそも HUGO って何？
 
-とてもざっくり言うと [HUGO](https://gohugo.io) とは Markdown 等の形式で書いたドキュメント群を、`hugo` コマンド一発で静的なウェブサイトとしてビルドするツールです。
+とてもざっくり言うと [HUGO](https://gohugo.io) とは Markdown 等の形式で書いたドキュメント群を、
+`hugo` コマンド一発で静的なウェブサイトとしてビルドするツールです。
 ビルドされた一連のファイル群は Apache などが稼働するウェブサーバーにそのまま配置することが可能です。
 バージョン 0.17 からは多言語サイトの構築にも対応しました。
 そのためマニュアル等のドキュメントを複数の言語で提供したい、などといったことも可能です。
@@ -30,23 +31,32 @@ HUGOは、主に次のような目的のサイト構築に適していると言�
 - フリーランサーのポートフォリオページ
 - 個人ブログ
 
-`hugo` コマンド自体は [Go](https://golang.org/) 言語で作成されており、 Windows / Mac OS / Linux 等さまざまな環境上で動作します。
+`hugo` コマンド自体は [Go](https://golang.org/) 言語で作成されており、
+Windows / Mac OS / Linux 等さまざまな環境上で動作します。
 ビルド速度も高速です。
 
 ちなみに今ご覧のこのサイト自体も HUGO を使って構築されています。
-今回以降の一連のポストでは、Windows 上にこれらのページを作成する環境を構築し、最終的に github pages で公開するまでの手順を紹介していきます。
+今回以降の一連のポストでは、Windows 上にこれらのページを作成する環境を構築し、
+最終的に [GitHub Pages](https://pages.github.com/) で公開するまでの手順を紹介していきます。
 
 <!--more-->
 
-## 構築を行う環境
+## 構築を行う環境および前提条件
 
 筆者の開発環境である Windows10 Pro 64bit (Build 1511) に環境を構築していった例で示していきます。
+Windwos の特定のバージョンに依存するような処理は行わないので、Windows7 等でも特に問題はないはずです。
+
 以下のツールがすでにインストールされていることを前提とします。
 
 - [git for windows](https://git-scm.com/downloads)
 
 各種コマンド実行は cmd.exe によるコマンドプロンプトから行います。cygwin や bash は今回使用しません。
-git は CLI である必要は無く、 [SourceTree](https://ja.atlassian.com/software/sourcetree) などのような GUI アプリの方が使い慣れているというのであれば、そちらを利用しても構いません。
+git は CLI である必要は無く、 [SourceTree](https://ja.atlassian.com/software/sourcetree) などのような
+GUI アプリの方が使い慣れているというのであれば、そちらを利用しても構いません。
+
+また [GitHub](https://github.com/) アカウントはすでに持っているものとします。
+これは GitHub Pages でページを公開するためには必須となります。
+もしまだアカウントを取得していないのであれば [Sign up](https://github.com/join?source=header-home) してください。
 
 ## 構築作業の全景
 
@@ -56,7 +66,7 @@ git は CLI である必要は無く、 [SourceTree](https://ja.atlassian.com/so
 1. [ ] **プロジェクト用の作業ディレクトリを作る**
 1. [ ] **作業ディレクトリに各種の初期設定を行う**
 1. [ ] [作業ディレクトリにページデータを作成する]({{< relref "howto_add_hugo_pages.md" >}})
-1. [ ] github page に連携する
+1. [ ] [GitHub Pages に連携する]({{< relref "howto_push_hugo_site.md" >}})
 
 当ポストは3番目までを示します。
 4番以降の手順はリンク先のポストをご覧ください。
@@ -108,6 +118,8 @@ Hugo Static Site Generator v0.18 BuildDate: 2016-12-24T12:10:44+09:00
 
 静的サイトを構築するためのプロジェクト作業ディレクトリを任意の場所に作成します。
 今回の例では `D:\workspace\hugo\` の下に `yourname.github.io` を作業ディレクトリとして作成することにします。
+`yourname` の部分はあなたの GitHub アカウント名に合わせておいてください。
+これ以降 `yourname` の表記が出てきた場合は、適宜ご自身のアカウント名に読み替えてください。
 
 まず、親ディレクトリを作ってそこに移動します。
 

@@ -11,6 +11,10 @@ theme = "hugo-phlat-theme"
 # PygmentsCodeFences = true
 # PygmentsStyle = "monokai"
 
+enableEmoji = true
+footnoteAnchorPrefix = ""
+footnoteReturnLinkContents = "^"
+
 [permalinks]
   post = "/:year/:month/:slug/"
   page = "/:slug/"
