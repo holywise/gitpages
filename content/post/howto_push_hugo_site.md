@@ -253,3 +253,8 @@ D:\workspace\hugo\yourname.github.io\public>git push origin master
 
 これで https://youname.github.io/ にてページが公開されているはずです。
 実際にアクセスしてみて確認してみてください。
+
+## 参考
+
+このブログ自身のソースを https://github.com/holywise/gitpages にて公開しています。
+css等のカスタマイズを含めて参考にしていただければと思います。
