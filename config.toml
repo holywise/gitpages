@@ -4,6 +4,7 @@
 
 DefaultContentLanguage = "ja"
 languageCode = "ja-JP"
+hasCJKLanguage = true
 
 baseurl = "https://holywise.github.io/"
 title = "Holywise Tech Notes"

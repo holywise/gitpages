@@ -72,3 +72,7 @@ figcaption p {
     text-shadow: 1px 1px 2px #E0C0C0;
     font-size: 85%;
 }
+
+figure.origin img {
+    width: auto;
+}
