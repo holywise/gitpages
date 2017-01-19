@@ -7,7 +7,7 @@ title = "HUGOで静的ページサイトを構築する (3/3)"
 draft = false
 categories = ["環境構築"]
 author = "holywise"
-description = "HUGOで静的ページを作成して GitHub Pages で公開するまでの手順"
+description = "Windows 環境で HUGO で静的ページを作成して GitHub Pages でブログとして公開するまでの手順について"
 
 +++
 

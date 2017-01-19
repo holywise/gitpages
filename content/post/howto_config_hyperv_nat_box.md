@@ -7,7 +7,7 @@ author = "holywise"
 date = "2017-01-18T22:58:50+09:00"
 slug = "howto_config_hyperv_nat_box"
 draft = false
-description = "Windows10 Client Hyper-V にて CentOS7 box に NAT 環境を構築するまでの手順"
+description = "Windows10 Client Hyper-V にて CentOS7 box に NAT 環境を構築するまでの手順について"
 
 +++
 

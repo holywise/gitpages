@@ -1,7 +1,7 @@
 +++
 date = "2016-12-29T01:55:48+09:00"
 slug = "how_to_add_pages_hugo_site"
-description = "HUGOで静的ページを作成して GitHub Pages で公開するまでの手順"
+description = "Windows 環境で HUGO で静的ページを作成して GitHub Pages でブログとして公開するまでの手順について"
 draft = false
 categories = ["環境構築"]
 tags = ["Hugo", "Windows", "GitHub"]

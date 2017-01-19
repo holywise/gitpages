@@ -28,6 +28,7 @@ footnoteReturnLinkContents = "^"
   dateformat = "2006-01-02"
   keywords = ["programming", "developer"]
   description = "holywise tech notes"
+  google_analytics = "UA-90561561-1"
 
 [social]
   email = "mailto:holywise@gmail.com"

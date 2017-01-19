@@ -1,6 +1,6 @@
 +++
 draft = false
-description = "HUGOで静的ページを作成して GitHub pages で公開するまでの手順"
+description = "Windows 環境で HUGO で静的ページを作成して GitHub Pages でブログとして公開するまでの手順について"
 author = "holywise"
 isCJKLanguage = true
 tags = [

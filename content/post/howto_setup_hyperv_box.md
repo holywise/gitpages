@@ -1,7 +1,7 @@
 +++
 date = "2017-01-18T22:58:41+09:00"
 title = "Windows10 Client Hyper-V にて CentOS7 box に NAT 環境を構築する (1/2)"
-description = "Windows10 Client Hyper-V にて CentOS7 box に NAT 環境を構築するまでの手順"
+description = "Windows10 Client Hyper-V にて CentOS7 box に NAT 環境を構築するまでの手順について"
 tags = ["Windows","Hyper-V","CentOS"]
 isCJKLanguage = true
 author = "holywise"
